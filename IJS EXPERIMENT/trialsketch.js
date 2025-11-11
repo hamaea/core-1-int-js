@@ -172,6 +172,18 @@ function draw() {
   text("VIDEO PLAYING: " + videoIsPlaying, 10, height - 30);
   // Display current video playback time in seconds with 2 decimal places
   text("VIDEO TIME: " + vid.time().toFixed(2) + " sec", 10, height - 10);
+
+  push();
+  textSize(40);
+  textAlign(LEFT);
+  textStyle(ITALIC);
+  text("X: ORGANIC, Y: TECHNOLOGY", 10, 60  );
+  pop();
+  text("BY ELLIA, ISHAANA, AND NAOMI", 10, 80);
+  text("CLICK TO PLAY/PAUSE", 10, 120);
+  text("CODE TOOLKIT: JAVASCRIPT | PROF. SAM HECKLE", 10, 140);
+  text("FALL 2025", 10, 160);
+  
 }
 
 // TOUCH INTERACTION

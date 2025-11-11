@@ -613,7 +613,7 @@ function setup() {
       hideCameraBtn.html(showCamera?"Hide Camera":"Show Camera");
     });
 
-  toggleViewBtn = createButton("Toggle Side View");
+  // toggleViewBtn = createButton("Toggle Side View");
   toggleViewBtn.position(20, 20);
   toggleViewBtn.mousePressed(() => {
     if (!tiltedView) {

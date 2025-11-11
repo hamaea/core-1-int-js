@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXPERIMENTS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>LOOK FOR THE EXPERIMENTS</h1>
+
+  <ul class="experiment-list">
+    <li><a href="DIGITAL FAB JS EXPERIMENT/index.html">"DIGITAL TRANSLATION"</a></li>
+    <li><a href="IJS EXPERIMENT/index.html">"X: ORGANIC, Y: TECHNOLOGY"</a></li>
+  </ul>
+  <script>
+    window.addEventListener("load", () => {
+      const title = document.querySelector("h1");
+      const rect = title.getBoundingClientRect();
+      const items = document.querySelectorAll(".experiment-list li");
+
+      items.forEach(li => {
+        li.style.position = "absolute";
+        let x, y;
+
+        do {
+          x = Math.random() * (window.innerWidth - 150);
+          y = Math.random() * (window.innerHeight - 50);
+        } while (y > rect.top && y < rect.bottom);
+
+        li.style.left = x + "px";
+        li.style.top = y + "px";
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>

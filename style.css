@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  padding: 32px;
+  background: #f5f5f5;
+}
+
+h1 {
+  font-size: 8rem;
+  position: fixed;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+  margin: 0;
+  text-align: left;
+}
+
+.experiment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experiment-list li {
+  margin-bottom: 12px;
+}
+
+.experiment-list a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 0px 14px;
+  border: 0px solid #000;
+  background: ;
+  display: inline-block;
+  transition: 0.2s;
+  color: #FFF;
+}
+
+.experiment-list a:hover {
+  background: white;
+  color: #000;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* push behind HTML */
+}
