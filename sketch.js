@@ -3,7 +3,7 @@ function setup() {
   background('white');
   textAlign(CENTER);
   textSize(20);
-  text('hi', window.innerWidth/2 + window.innerWidth/3, window.innerHeight/2);
+  text('"experiment 3 - mouse to reveal"', window.innerWidth/2 + window.innerWidth/3, window.innerHeight/2);
 }
 
 function draw() {
